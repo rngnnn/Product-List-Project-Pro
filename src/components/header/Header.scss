@@ -1,0 +1,28 @@
+@import"../../scss/variable";
+@import"../../scss/mixins";
+
+
+.header{
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 5rem;
+
+    h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: $cardNavBgColor;
+        font-family: 'Times New Roman', Times, serif;
+
+
+    }
+   
+    .btns{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 1.5rem;
+
+
+    }
+}
