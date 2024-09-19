@@ -1,4 +1,3 @@
-import React from 'react'
 import "./Header.scss"
 
 
@@ -8,7 +7,7 @@ const Header = ({categories}) => {
     <div className='header'>
       <h1>Products List</h1>
 
-      <div className='btns' >
+      <div className='btnDiv' >
 
         {
             categories.map((a)=>(
@@ -21,7 +20,7 @@ const Header = ({categories}) => {
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Header
