@@ -33,9 +33,13 @@ I added node_modules to the project with ** npm Install **
     ├── App.scss
     ├── index.js
 
+
 ### Screen Recording
 
-[<img src="../Ekran Kaydı 2024-09-26 15.34.41.mov" width="50%">]( "Now in Android: 55")
 
+https://github.com/user-attachments/assets/32de1f8c-9078-4303-a1ee-f8842c127b97
+
+
+###Link
 
 ### http://localhost:3000/
