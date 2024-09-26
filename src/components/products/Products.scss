@@ -1,0 +1,74 @@
+@import "../../scss/variable";
+@import "../../scss/mixins";
+
+.ürün-list {
+@include flexxx(row,space-evenly,2rem);
+margin:1rem;
+
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-evenly;
+  // align-items: center;
+  // gap: 2rem;
+  // flex-direction: row;
+
+
+  .card {
+    width: 350px;
+    height:$cardHeight;
+    position:relative;
+
+   overflow: hidden;
+// card dan taşanları gizle
+
+    .price {
+ position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+     background-color: $cardBgColor;
+      color: $cardColor;
+      padding: $cardPadding;
+      font-size: 0.9rem;
+      border-radius: $borderRadius;   
+z-index:2;
+
+    }
+
+    img {
+      width: 100%;
+      height:$cardHeight;
+       border-radius: $borderRadius; 
+      filter:sepia(100%);
+    //   img lerin renklerini aynı yapar ve sarartır
+
+    }
+
+    &_over {
+      width: 100%;
+position:absolute;
+bottom:0;
+font-size: 1.2rem;
+      padding: $cardPadding;
+      border-radius: $borderRadius;
+      background-color: $cardBgColor;
+      color:darken(white,50%);
+// darken verilen color u silikleştirir
+
+transform: translateX(100%);
+// tamamen sağa git
+transition:transform 0.7s;
+    }
+
+
+    &:hover .card_over{
+        transform:translateX(0%);
+        // başlangıç noktasına geri dön
+    }
+    &:hover img {
+        filter:none;
+    }
+
+  }
+}
